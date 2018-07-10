@@ -1,0 +1,90 @@
+body{
+    background-color: gray;
+    background-image: url("../pics/background/background_pattern.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login{
+    position: fixed;
+    top: 50px;
+    left: 30px;
+    width: 385px;
+    height: 50px;
+    font-size: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid gray;
+    padding-left: 15px;
+}
+.pos_rac{
+    position: fixed;
+    top: 150px;
+    left: 30px;
+    border: 1px solid gray;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.pos_rac2{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    text-align: center;
+}
+.naslov_rac{
+    font-family: 'ABeeZee';
+    margin: 0px;
+    padding: 10px;
+    text-decoration: underline;
+}
+.all_c{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: #00AA8D;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.all_c:hover{
+    background-color: #00BF9A; 
+}
+.all_c:active{
+    background-color: #008975;
+}
+.kichen_note{
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    width: 400px;
+    height: 275px;
+    border: 1px solid gray;
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.k_note{
+    font-family: 'ABeeZee';
+    margin: 0px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.bar_note{
+    position: fixed;
+    top: 375px;
+    right: 30px;
+    width: 400px;
+    height: 275px;
+    border: 1px solid gray;
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.b_note{
+    font-family: 'ABeeZee';
+    margin: 0px;
+    margin-top: 2px;
+    margin-left: 5px;
+}

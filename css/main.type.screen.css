@@ -1,0 +1,747 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ECF0F1;
+}
+p{
+	margin: 0px;
+}
+* {box-sizing: border-box}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border: 2px solid #DF4837;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: white;
+    outline: none;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #E44A38;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    outline-style: none;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+button:active{
+    opacity: 0.8;
+}
+/*
+scrollbar desing
+*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ECF0F1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #C2382B; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.typed{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 39.8%;
+	height: 57.4%;
+	border: 5px solid #C1392B;
+	padding: 0px;
+}
+
+.drink{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #f1f1f1;
+}
+.drink_child{
+	position: absolute;
+	height: 90%;
+	width: 100%;
+	right: 0px;
+	font-size: 15px;
+	padding: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.drink_child::-webkit-scrollbar {
+    width: 5px;
+}
+.drink_child::-webkit-scrollbar-track {
+    background: none; 
+}
+ 
+/* Handle */
+.drink_child::-webkit-scrollbar-thumb {
+    background: #7E8C8D; 
+    max-height: 20px;
+}
+
+/* Handle on hover */
+.drink_child::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*typed */
+.total{
+	font-family: 'Russo One', sans-serif;
+	position: absolute;
+	bottom: 0px;
+	height: 10%;
+	width: 100%;
+	border-top: 1px solid black;
+	background-color: #ECF0F1;
+}
+.total p{
+	font-size: 2vw;
+	padding-left: 10px;
+	padding-top: 0.5%;
+	padding-right: 13px;
+}
+/*____________________*/
+.table_tip {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.table_tip td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table_tip tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/*___________________*/
+.hid_div{
+	visibility: hidden;
+}
+.articles{
+	position: absolute;
+	top: 5px;
+	left: 40.3%;
+	width: 59.4%;
+	height: 57.4%;
+}
+.articles_child{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+.article{
+	text-align: center;
+	color: #ECF0F1;
+	position: relative;
+	display: inline-block;
+	/*width: 184px;*/
+	/*height: 115px;*/
+	width: 19.6%;
+	height: 26%;
+	text-align: center;
+	cursor: pointer;
+	background-color: #EB4C40;
+	border: 5px solid #EB4C40;
+}
+
+.div_click{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	opacity: 0;
+}
+
+.prevara{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.article h4{
+	font-family: 'Teko', sans-serif;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.2vw;
+	margin: 0;
+    color: white;
+}
+
+.art_name{
+	width: 100%;
+	height: 60%;
+	padding-top: 10px;
+	overflow: hidden;
+}
+.art_prc{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	height: 40%;
+	left: 0px;
+	bottom: 0px;
+	background-color: #C1392B;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-family: 'Teko', sans-serif;
+	font-size: 25px;
+
+}
+.art_tip{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	height: 40%;
+	right: 0px;
+	bottom: 0px;
+	background-color: #C1392B;
+	border-left: 5px solid #EB4C40;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-family: 'Teko', sans-serif;
+	font-size: 25px;
+
+}
+.art_tip2{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	
+}
+.art_prc2{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+}
+.article:hover{
+	background-color: #e25248;
+	border: 5px solid #e25248;
+}
+.article:hover .art_tip{
+	border-left: 5px solid #e25248;
+}
+.article:active{
+	opacity: 0.9;
+}/*
+.a_search{
+	position: absolute;
+	width: 100%;
+	height: 10.5%;
+	bottom: 0px;
+}
+.pic{
+	position: absolute;
+	z-index: 99;
+	top: 10px;
+	left: 10px;
+}
+.search_bar{
+	position: absolute;
+	padding-left: 60px;
+	font-size: 2vw;
+	margin: 0px;
+	top: 0px !important;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px 5px 5px 5px;
+}*/
+.buttons{
+	position: absolute;
+	left: 5px;
+	top: 58.5%;
+	width: 39.75%;
+	height: 7%;
+}
+.most_used{
+	position: absolute;
+	top: 66%;
+	height: 25.5%;
+	width: 39.8%;
+	left: 5px;
+	border: 1px solid black;
+}
+.modify_dish{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background-color: #ECF0F1;
+	visibility: hidden;
+}
+.modify_dish_header{
+	position: absolute;
+	top: 0px;
+	height: 12%;
+	width: 100%;
+	background-color: #EB4C40;
+}
+#close_dish_settings{
+	position: absolute;
+	height: 100%;
+}
+.side_dish{
+	position: absolute;
+	bottom: 22%;
+	left: 0px;
+	height: 65%;
+	width: 30%;
+	border: 1px solid black;
+}
+.side_dish2{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 15%;
+	background-color: #EB4C40;
+}
+.dish_sos{
+	position: absolute;
+	left: 30%;
+	bottom: 22%;
+	height: 65%;
+	width: 30%;
+	border: 1px solid black;
+}
+.dish_how_done{
+	position: absolute;
+	bottom: 50%;
+	right: 0px;
+	height: 37%;
+	width: 40%;
+}
+#b1{
+	border-right: 2px solid #ECF0F1;
+	border-bottom: 2px solid #ECF0F1;
+}
+#b2{
+	border-left: 2px solid #ECF0F1;
+	border-bottom: 2px solid #ECF0F1;
+}
+#b3{
+	border-right: 2px solid #ECF0F1;
+	border-top: 2px solid #ECF0F1;
+	border-bottom: 2px solid #ECF0F1;
+}
+#b4{
+	border-left: 2px solid #ECF0F1;
+	border-top: 2px solid #ECF0F1;
+	border-bottom: 2px solid #ECF0F1;
+}
+#b5{
+	border-right: 2px solid #ECF0F1;
+	border-top: 2px solid #ECF0F1;
+}
+#b6{
+	border-left: 2px solid #ECF0F1;
+	border-top: 2px solid #ECF0F1;
+}
+.dish_how_done button{
+	width: 50%;
+	height: 33.33%;
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 0.7vw;
+}
+.dish_button{
+	width: 50%;
+	height: 47%;
+}
+#one_dish{
+	border-right: 2px solid #ECF0F1;
+}
+#all_dish{
+	border-left: 2px solid #ECF0F1;
+}
+.how_many_dish{
+	position: absolute;
+	width: 40%;
+	height: 25%;
+	bottom: 22%;
+	left: 60%;
+}
+.how_many_dish button{
+	font-size: 0.8vw;
+}
+.dish_b_first{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 33.33%;
+	height: 50%;
+}
+.dish_b_middle{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	left: 33.34%;
+	height: 50%;
+	width: 33.33%;
+	border-bottom: 2px solid #EB4C40;
+	border-top: 2px solid #EB4C40;
+}
+.dish_b_last{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 50%;
+	width: 33.33%;
+}
+.dish_when_done{
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	bottom: 11%;
+}
+.dish_when_done button{
+	border-right: 4px solid white;
+	font-size: 0.7vw;
+	width: 20%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#last_btn{
+	border: none;
+}
+
+.dish_when_done form{
+	float: left;
+	display: inline;
+}
+.other{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 10%;
+	width: 100%;
+	background-color: green;
+}
+.additional_note{
+	position: absolute;
+	padding-left: 16%;
+	right: 0px !important;
+	height: 100%;
+	width: 100%;
+	font-size: 0.9vw;
+}
+.additional_note_button{
+	position: absolute;
+	bottom: 0px;
+	height: 10%;
+	width: 15%;
+	left: 0px;
+}
+.categories{
+	position: absolute;
+	top: 65.5%;
+	left: 40.3%;
+	width: 59.7%;
+	height: 34.5%;
+	border-right: 0px;
+	background-color: #ECF0F1 /*#344860*/
+}
+.categories_child{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	overflow-y: auto;
+	padding-top: 3px;
+	font-size: 0px;
+}
+.categories_child::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.categories_child::-webkit-scrollbar-track {
+    background: #C1392B; 
+}
+ 
+/* Handle */
+.categories_child::-webkit-scrollbar-thumb {
+    background: white; 
+}
+.categories_child2{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding-top: 4px;
+	color: white;
+	height: 16.5%;
+	width: 20%;
+	background-color: #344860;
+	margin-bottom: 1px;
+	overflow-y: hidden;
+	border-right: 4px solid  #ECF0F1;
+	border-bottom: 4px solid  #ECF0F1;
+	font-family: 'Teko', sans-serif;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.2vw;
+}
+.categories_child2:hover{
+	background-color: #657b7c !important;
+}
+.categories_child2:active{
+	background-color: #C1392B !important;
+}
+.categories_child2:target{
+	background-color: #C1392B !important;
+}
+.categories_child3{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	cursor: pointer;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+   -webkit-user-select: none;
+
+}
+.ctg_buttons{
+	position: absolute;
+	width: 59.4%;
+	height: 7%;
+	bottom: 34.5%;
+	left: 40.3%;
+}
+.ctg_buttons button:hover{
+	opacity: 1;
+}
+.ctg_cards{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 80%;
+	background: #344860;
+	overflow-y: scroll;
+}
+.ctg_cards::-webkit-scrollbar {
+    width: 5px;
+}
+.ctg_cards::-webkit-scrollbar-track {
+    background: #C1392B; 
+}
+ 
+/* Handle */
+.ctg_cards::-webkit-scrollbar-thumb {
+    background: #7E8C8D; 
+}
+
+/* Handle on hover */
+.ctg_cards::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.ctg_buttons button{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	font-size: 20px;
+}
+.ctg_button1{
+	background-color: #344860; 
+	left: 0px;
+	border-right: 2px solid #ECF0F1;
+}
+.ctg_button2{
+	right: 0px;
+	border-left: 2px solid #ECF0F1;
+}
+/*       */
+.button1{
+	font-size: 20px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 50%;
+	border-right: 2px solid #C1392B;
+}
+.button2{
+	font-size: 20px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 50%;
+	border-left: 2px solid #C1392B;
+}
+.cat_card{
+	display: inline-block;
+	margin: 5px;
+	width: 144px;
+	height: 70px;
+	border: 1px solid black;
+	text-align: center;
+	cursor: context-menu;
+}
+.nav_bar{
+	position: absolute;
+	top: 92%;
+	left: 5px;
+	height: 7.3%;
+	width: 39.8%;
+}
+.nav_bar button{
+	height: 100%;
+	width: 22.5%;
+	font-size: 0.8vw;
+	background-color: #232b2b;
+}
+#log-out{
+	position: absolute;
+	height: 100%;
+	width: 10%;
+	right: 0px;
+	background-color: #232b2b;
+	background-image: url("../pics/icons/exit.png");
+	background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+}
+#log-out:hover{
+	background-image: url("../pics/icons/exit3.png");
+	background-repeat: no-repeat;
+    background-size: 55% 55%;
+    background-position: center;
+}
+/*moral*/
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
